@@ -54,6 +54,7 @@ def update_hero_data(*hero_val):
 			get_hero_data(item)
 	with open('results.json', 'wb') as f:
 		json.dump(d_final, f)
+	return(d_final)
 			
 # Gets specific hero data
 def get_hero_data(hero_val):
