@@ -7,14 +7,19 @@ import json
 import time
 import sys
 
+######### GLOBAL VARIABLES #########
+
+prepend_url = 'https://www.overbuff.com/heroes'
+d_final = defaultdict(dict)
+hero_list = []
+
 ######### GET LIST OF HEROES #########
+
 def update_hero_list():
 	# Get hero list
-	page = requests.get('https://www.overbuff.com/heroes')
+	page = requests.get(prepend_url)
 	c = page.content
 	soup = BeautifulSoup(c, 'lxml')
-	# Initialize hero list
-	hero_list = []
 	# Sort by table
 	table = soup.find_all('table')
 	for item in table:
@@ -33,6 +38,8 @@ def update_hero_list():
 			pass
 
 ######### DATA SCRAPING #########
+
+# Wrapper call to update hero data (takes arguments for 'all' or specific hero name)
 def update_hero_data(*hero_val):
 	# Take arguments
 	arg = []
@@ -45,13 +52,30 @@ def update_hero_data(*hero_val):
 	else:
 		for item in arg:
 			get_hero_data(item)
-		
+	with open('results.json', 'wb') as f:
+		json.dump(d_final, f)
+			
+# Gets specific hero data
 def get_hero_data(hero_val):
-	string = hero_val
-	print('Getting ' + string + ' data')
-	
+	hero_name = hero_val
+	page = requests.get(prepend_url + '/' + hero_name)
+	c = page.content
+	soup_hero = BeautifulSoup(c, 'lxml')
+	stats = soup_hero.find_all('div')
+	temp_dict = {}
+	for item in stats:
+		try:
+			if 'boxed' in item['class']:
+				stat2 = item.find_all('div')
+				temp_dict[stat2[2].text] = stat2[1].text
+		except:
+			pass
+	d_final[hero_name] = temp_dict
+
+# Gets all hero data
 def get_all_data():
-	print('Getting all data')
+	for item in hero_list:
+		get_hero_data(item)
 	
 	
 	
