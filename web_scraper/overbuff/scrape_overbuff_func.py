@@ -68,7 +68,7 @@ def get_hero_data(hero_val):
 		try:
 			if 'boxed' in item['class']:
 				stat2 = item.find_all('div')
-				temp_dict[stat2[2].text] = stat2[1].text
+				temp_dict[stat2[2].text.upper()] = stat2[1].text
 		except:
 			pass
 	d_final[hero_name] = temp_dict
