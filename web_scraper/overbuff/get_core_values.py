@@ -15,7 +15,25 @@ def get_core(output_dict):
 		for k1 in pre_dict[k].keys():
 			for item in core_vals:
 				if k1 == item:
-					temp_dict[k1] = pre_dict[k][k1]
+					# Replace string numbers with commas (1,000 with int counterparts)
+					try:
+						temp_dict[k1] = float(pre_dict[k][k1].replace(',', ''))
+					except:
+						pass
+					# Replace percentages with just flat numbers
+					try:
+						temp_dict[k1] = float(pre_dict[k][k1].replace('%', ''))
+					except:
+						pass
+					# Replace objective time from min:sec to seconds
+					try:	
+						if ':' in pre_dict[k][k1]:
+							split_list = pre_dict[k][k1].split(':')
+							_min = int(split_list[0]) * 60
+							total_time = _min + int(split_list[1])
+							temp_dict[k1] = total_time
+					except:
+						pass
 				else:
 					pass
 		core_dict[k] = temp_dict
