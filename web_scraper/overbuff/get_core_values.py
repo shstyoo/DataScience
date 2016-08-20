@@ -4,7 +4,7 @@ import time
 import sys
 
 # Set list of values to keep
-core_vals = ['ELMINATIONS', 'OBJ KILLS', 'OBJ TIME', 'WEAPON ACC', 'CRITICAL HITS', 'SOLO KILLS', 'DAMAGE', 'HEALING', 'DEATHS', 'MEDALS', 'GOLD MEDALS', 'SILVER MEDALS', 'BRONZE MEDALS', 'E:D RATIO', 'VOTING CARDS']
+core_vals = ['WINRATE', 'ELMINATIONS', 'OBJ KILLS', 'OBJ TIME', 'WEAPON ACC', 'CRITICAL HITS', 'SOLO KILLS', 'DAMAGE', 'HEALING', 'DEATHS', 'MEDALS', 'GOLD MEDALS', 'SILVER MEDALS', 'BRONZE MEDALS', 'E:D RATIO', 'VOTING CARDS']
 
 # Get only core values
 def get_core(output_dict):

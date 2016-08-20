@@ -9,6 +9,7 @@
 		"VOTING CARDS": 0.34,
 		"GOLD MEDALS": 1.41,
 		"OBJ TIME": 36,
+		"WINRATE": 53.14,
 		"HEALING": 1081.0,
 		"E:D RATIO": 2.43,
 		"MEDALS": 3.79,
@@ -23,6 +24,7 @@
 		"VOTING CARDS": 0.2,
 		"GOLD MEDALS": 0.62,
 		"OBJ TIME": 29,
+		"WINRATE": 49.4,
 		"HEALING": 3276.0,
 		"E:D RATIO": 1.14,
 		"MEDALS": 1.75,
@@ -37,6 +39,7 @@
 		"VOTING CARDS": 0.22,
 		"SILVER MEDALS": 0.88,
 		"OBJ TIME": 57,
+		"WINRATE": 54.75,
 		"GOLD MEDALS": 0.86,
 		"E:D RATIO": 1.99,
 		"MEDALS": 2.56
@@ -50,12 +53,13 @@
 		"VOTING CARDS": 0.6,
 		"SILVER MEDALS": 0.73,
 		"OBJ TIME": 14,
+		"WINRATE": 63.74,
 		"GOLD MEDALS": 0.65,
 		"E:D RATIO": 2.48,
 		"MEDALS": 2.11
 	},
 	"pharah": {
-		"WEAPON ACC": 43.0,
+		"OBJ KILLS": 4.92,
 		"DEATHS": 6.78,
 		"SILVER MEDALS": 0.82,
 		"BRONZE MEDALS": 0.72,
@@ -63,12 +67,13 @@
 		"VOTING CARDS": 0.4,
 		"GOLD MEDALS": 0.97,
 		"OBJ TIME": 24,
+		"WINRATE": 50.87,
 		"E:D RATIO": 2.09,
 		"MEDALS": 2.5,
-		"OBJ KILLS": 4.92
+		"WEAPON ACC": 43.0
 	},
 	"torbjorn": {
-		"WEAPON ACC": 25.0,
+		"OBJ KILLS": 5.33,
 		"DEATHS": 4.54,
 		"SILVER MEDALS": 0.9,
 		"CRITICAL HITS": 5.5,
@@ -77,9 +82,10 @@
 		"VOTING CARDS": 0.6,
 		"GOLD MEDALS": 1.19,
 		"OBJ TIME": 12,
+		"WINRATE": 60.82,
 		"E:D RATIO": 3.32,
 		"MEDALS": 2.78,
-		"OBJ KILLS": 5.33
+		"WEAPON ACC": 25.0
 	},
 	"widowmaker": {
 		"OBJ KILLS": 3.09,
@@ -91,13 +97,14 @@
 		"VOTING CARDS": 0.22,
 		"SILVER MEDALS": 0.67,
 		"OBJ TIME": 7,
+		"WINRATE": 50.86,
 		"GOLD MEDALS": 0.66,
 		"E:D RATIO": 2.58,
 		"MEDALS": 2.01,
 		"WEAPON ACC": 34.0
 	},
 	"junkrat": {
-		"WEAPON ACC": 19.0,
+		"OBJ KILLS": 4.95,
 		"DEATHS": 6.67,
 		"SOLO KILLS": 3.73,
 		"DAMAGE": 6832.0,
@@ -105,10 +112,11 @@
 		"VOTING CARDS": 0.25,
 		"SILVER MEDALS": 0.82,
 		"OBJ TIME": 22,
+		"WINRATE": 51.25,
 		"GOLD MEDALS": 0.96,
 		"E:D RATIO": 2.04,
 		"MEDALS": 2.52,
-		"OBJ KILLS": 4.95
+		"WEAPON ACC": 19.0
 	},
 	"bastion": {
 		"OBJ KILLS": 5.62,
@@ -121,13 +129,14 @@
 		"VOTING CARDS": 0.4,
 		"GOLD MEDALS": 1.33,
 		"OBJ TIME": 15,
+		"WINRATE": 55.16,
 		"HEALING": 601.0,
 		"E:D RATIO": 2.36,
 		"MEDALS": 3.34,
 		"WEAPON ACC": 23.0
 	},
 	"genji": {
-		"WEAPON ACC": 28.0,
+		"OBJ KILLS": 4.09,
 		"DEATHS": 6.66,
 		"SOLO KILLS": 3.32,
 		"CRITICAL HITS": 7.4,
@@ -136,10 +145,11 @@
 		"VOTING CARDS": 0.31,
 		"SILVER MEDALS": 0.82,
 		"OBJ TIME": 32,
+		"WINRATE": 53.18,
 		"GOLD MEDALS": 0.76,
 		"E:D RATIO": 2.09,
 		"MEDALS": 2.38,
-		"OBJ KILLS": 4.09
+		"WEAPON ACC": 28.0
 	},
 	"zenyatta": {
 		"OBJ KILLS": 3.75,
@@ -151,6 +161,7 @@
 		"VOTING CARDS": 0.56,
 		"GOLD MEDALS": 1.06,
 		"OBJ TIME": 31,
+		"WINRATE": 52.84,
 		"HEALING": 3441.0,
 		"E:D RATIO": 1.64,
 		"MEDALS": 2.64,
@@ -166,13 +177,14 @@
 		"VOTING CARDS": 0.6,
 		"GOLD MEDALS": 1.53,
 		"OBJ TIME": 65,
+		"WINRATE": 58.07,
 		"HEALING": 6338.0,
 		"E:D RATIO": 1.59,
 		"MEDALS": 2.61,
 		"WEAPON ACC": 24.0
 	},
 	"zarya": {
-		"WEAPON ACC": 42.0,
+		"OBJ KILLS": 6.45,
 		"DEATHS": 5.25,
 		"SILVER MEDALS": 0.93,
 		"BRONZE MEDALS": 0.75,
@@ -180,12 +192,13 @@
 		"VOTING CARDS": 0.58,
 		"GOLD MEDALS": 1.14,
 		"OBJ TIME": 58,
+		"WINRATE": 54.36,
 		"E:D RATIO": 2.64,
 		"MEDALS": 2.82,
-		"OBJ KILLS": 6.45
+		"WEAPON ACC": 42.0
 	},
 	"mccree": {
-		"WEAPON ACC": 38.0,
+		"OBJ KILLS": 4.41,
 		"DEATHS": 7.04,
 		"SOLO KILLS": 3.85,
 		"CRITICAL HITS": 3.9,
@@ -194,10 +207,11 @@
 		"VOTING CARDS": 0.33,
 		"SILVER MEDALS": 0.79,
 		"OBJ TIME": 24,
+		"WINRATE": 49.14,
 		"GOLD MEDALS": 0.82,
 		"E:D RATIO": 2.07,
 		"MEDALS": 2.38,
-		"OBJ KILLS": 4.41
+		"WEAPON ACC": 38.0
 	},
 	"mei": {
 		"OBJ KILLS": 5.33,
@@ -209,13 +223,14 @@
 		"VOTING CARDS": 0.26,
 		"GOLD MEDALS": 0.89,
 		"OBJ TIME": 46,
+		"WINRATE": 52.56,
 		"HEALING": 707.0,
 		"E:D RATIO": 2.15,
 		"MEDALS": 3.09,
 		"WEAPON ACC": 33.0
 	},
 	"hanzo": {
-		"WEAPON ACC": 21.0,
+		"OBJ KILLS": 4.21,
 		"DEATHS": 5.83,
 		"SOLO KILLS": 3.49,
 		"CRITICAL HITS": 7.0,
@@ -224,10 +239,11 @@
 		"VOTING CARDS": 0.19,
 		"SILVER MEDALS": 0.77,
 		"OBJ TIME": 17,
+		"WINRATE": 49.59,
 		"GOLD MEDALS": 0.83,
 		"E:D RATIO": 2.19,
 		"MEDALS": 2.31,
-		"OBJ KILLS": 4.21
+		"WEAPON ACC": 21.0
 	},
 	"roadhog": {
 		"OBJ KILLS": 5.36,
@@ -239,6 +255,7 @@
 		"VOTING CARDS": 0.47,
 		"GOLD MEDALS": 1.29,
 		"OBJ TIME": 42,
+		"WINRATE": 51.89,
 		"HEALING": 2783.0,
 		"E:D RATIO": 2.42,
 		"MEDALS": 3.77,
@@ -254,6 +271,7 @@
 		"VOTING CARDS": 0.53,
 		"SILVER MEDALS": 0.23,
 		"OBJ TIME": 25,
+		"WINRATE": 48.54,
 		"HEALING": 5233.0,
 		"GOLD MEDALS": 0.97,
 		"E:D RATIO": 0.26,
@@ -261,7 +279,7 @@
 		"WEAPON ACC": 27.0
 	},
 	"dva": {
-		"WEAPON ACC": 26.0,
+		"OBJ KILLS": 5.26,
 		"DEATHS": 5.26,
 		"SILVER MEDALS": 0.96,
 		"CRITICAL HITS": 8.7,
@@ -270,9 +288,10 @@
 		"VOTING CARDS": 0.28,
 		"GOLD MEDALS": 1.1,
 		"OBJ TIME": 55,
+		"WINRATE": 55.13,
 		"E:D RATIO": 2.7,
 		"MEDALS": 2.84,
-		"OBJ KILLS": 5.26
+		"WEAPON ACC": 26.0
 	},
 	"reaper": {
 		"OBJ KILLS": 6.13,
@@ -284,6 +303,7 @@
 		"VOTING CARDS": 0.33,
 		"SILVER MEDALS": 1.17,
 		"OBJ TIME": 36,
+		"WINRATE": 54.06,
 		"HEALING": 471.0,
 		"GOLD MEDALS": 1.14,
 		"E:D RATIO": 2.44,
@@ -299,12 +319,13 @@
 		"VOTING CARDS": 0.49,
 		"SILVER MEDALS": 0.67,
 		"OBJ TIME": 65,
+		"WINRATE": 53.33,
 		"GOLD MEDALS": 0.82,
 		"E:D RATIO": 1.45,
 		"MEDALS": 2.14
 	},
 	"tracer": {
-		"WEAPON ACC": 29.0,
+		"OBJ KILLS": 5.64,
 		"DEATHS": 7.01,
 		"SOLO KILLS": 3.32,
 		"SILVER MEDALS": 0.87,
@@ -314,8 +335,9 @@
 		"VOTING CARDS": 0.26,
 		"GOLD MEDALS": 0.99,
 		"OBJ TIME": 37,
+		"WINRATE": 51.94,
 		"E:D RATIO": 2.28,
 		"MEDALS": 2.63,
-		"OBJ KILLS": 5.64
+		"WEAPON ACC": 29.0
 	}
 }

@@ -64,6 +64,19 @@ def get_hero_data(hero_val):
 	soup_hero = BeautifulSoup(c, 'lxml')
 	stats = soup_hero.find_all('div')
 	temp_dict = {}
+	win_header = soup_hero.find_all('div')
+	for item2 in win_header:
+		try:
+			if 'layout-header-secondary' in item2['class']:
+				win_block = item2.find_all('dd')
+				for item3 in win_block:
+					try:
+						if 'color-stat-win' in item3['class']:
+							temp_dict['WINRATE'] = item3.text
+					except:
+						pass
+		except:
+			pass
 	for item in stats:
 		try:
 			if 'boxed' in item['class']:
