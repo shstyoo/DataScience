@@ -26,14 +26,27 @@ for item in dataset:
 	templabel.append(item[3])
 labels = templabel
 tempfeature = []
+tempdirector = []
+#tempgenre = []
 for item in dataset:
 	templist = []
-#	Stuff testing stuff testing
-#	templist.append(item[0])
-#	templist.append(item[1])
+	# If a director already exists, append his index into the dataset
+	if item[0] in tempdirector:
+		templist.append(tempdirector.index(item[0]))
+	# If a director doesn't exist append him into the director list and append to dataset
+	else:
+		tempdirector.append(item[0])
+		templist.append(tempdirector.index(item[0]))
+	#templist.append(item[1])
 	templist.append(item[2])
 	tempfeature.append(templist)
+# Our key on directors is here
+director_key = tempdirector
+print(director_key)
+print(len(director_key))
+# Our features are output here
 features = tempfeature
+print(features)
 # Training and testing data is partitioned here
 X = features
 y = labels
