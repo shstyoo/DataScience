@@ -20,14 +20,14 @@ for item in dataset:
 		del dataset[curr_index]
 		curr_index = curr_index - 1
 	curr_index = curr_index + 1
-# Split data into labels and features
+# Split data into labels and features (Genre has been commented out for now)
 templabel = []
 for item in dataset:
 	templabel.append(item[3])
 labels = templabel
 tempfeature = []
 tempdirector = []
-#tempgenre = []
+tempgenre = []
 for item in dataset:
 	templist = []
 	# If a director already exists, append his index into the dataset
@@ -37,16 +37,24 @@ for item in dataset:
 	else:
 		tempdirector.append(item[0])
 		templist.append(tempdirector.index(item[0]))
-	#templist.append(item[1])
+	# Discretize genre by number
+	temp = item[1].split('|')
+	temp2 = []
+	for genre in temp:
+		if genre in tempgenre:
+			temp2.append(tempgenre.index(genre))
+		else:
+			tempgenre.append(genre)
+			temp2.append(tempgenre.index(genre))
+	templist.append(temp2)
 	templist.append(item[2])
 	tempfeature.append(templist)
 # Our key on directors is here
 director_key = tempdirector
-print(director_key)
-print(len(director_key))
+# Our genre key is here
+genre_key = tempgenre
 # Our features are output here
 features = tempfeature
-print(features)
 # Training and testing data is partitioned here
 X = features
 y = labels
