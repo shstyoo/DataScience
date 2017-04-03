@@ -2,3 +2,5 @@
 iris
 .ipynb_checkpoints
 ignore
+test
+train
