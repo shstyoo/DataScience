@@ -4,3 +4,5 @@ iris
 ignore
 test
 train
+
+*.pyc
